@@ -19,14 +19,18 @@ public class Day6 {
             }
         }
         reader.close();
-        
         Day6 day6 = new Day6();
-        Arrays.fill(day6.mem, -1);
+        System.out.println("Part 1: " + day6.calculate(80, nums));
+        System.out.println("Part 2: " + day6.calculate(256, nums));
+    }
+    
+    private long calculate(int days, int[] nums) {
+        Arrays.fill(mem, -1);
         long total = 0;
         for (int n : nums) {
-            total += day6.countFish(n, 256);
+            total += countFish(n, days);
         }
-        System.out.println(total);  
+        return total;
     }
     
     long[] mem = new long[256 * 7];
