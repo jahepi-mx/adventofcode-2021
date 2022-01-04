@@ -42,8 +42,8 @@ public class Day25 {
 				int nextX = (x + 1) % width;
 				int nextY = y;
 				int nextValue = matrix[nextY * width + nextX];
-				if (!visited.contains(nextY * width + nextX) && !visited.contains(y * width + x)
-						&& value == 1 && nextValue == 0) {
+				if (!visited.contains(nextY * width + nextX) && !visited.contains(y * width + x) && value == 1
+						&& nextValue == 0) {
 					matrix[nextY * width + nextX] = value;
 					matrix[a] = 0;
 					visited.add(nextY * width + nextX);
@@ -59,8 +59,8 @@ public class Day25 {
 				int nextX = x;
 				int nextY = (y + 1) % height;
 				int nextValue = matrix[nextY * width + nextX];
-				if (!visited.contains(nextY * width + nextX) && !visited.contains(y * width + x)
-						&& value == 2 && nextValue == 0) {
+				if (!visited.contains(nextY * width + nextX) && !visited.contains(y * width + x) && value == 2
+						&& nextValue == 0) {
 					matrix[nextY * width + nextX] = value;
 					matrix[a] = 0;
 					visited.add(nextY * width + nextX);
