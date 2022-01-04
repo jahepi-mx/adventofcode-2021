@@ -9,7 +9,7 @@ import java.util.HashSet;
 public class Day25 {
 	public static void main(String[] args) throws IOException {
 		ArrayList<String> list = new ArrayList<>();
-		BufferedReader reader = new BufferedReader(new FileReader("input/day25/input.txt"));
+		BufferedReader reader = new BufferedReader(new FileReader("adventofcode/input/day25/input.txt"));
 		String line = "";
 		while ((line = reader.readLine()) != null) {
 			list.add(line);
